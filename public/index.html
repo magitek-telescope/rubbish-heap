@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>刺身</title>
+    <style media="screen">
+      body {
+        font-family: Roboto, Arial, sans-serif;
+        background: #ECEFF1;
+        color: rgba(0,0,0,0.87);
+      }
+
+      a {
+        color: rgb(3,155,229);
+      }
+    </style>
+  </head>
+  <body>
+    <app></app>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script type="riot/tag" src="app.tag"></script>
+    <script src="https://cdn.jsdelivr.net/riot/3.0/riot+compiler.min.js"></script>
+    <script>
+      const config = {
+        apiKey: "AIzaSyCIJ8S-d2vdkfze-0TkAXpqG1CWI8B732E",
+        authDomain: "rubbish-heap.firebaseapp.com",
+        databaseURL: "https://rubbish-heap.firebaseio.com",
+        storageBucket: "rubbish-heap.appspot.com",
+        messagingSenderId: "936219495505"
+      };
+      firebase.initializeApp(config);
+      riot.mount("app");
+    </script>
+  </body>
+</html>
